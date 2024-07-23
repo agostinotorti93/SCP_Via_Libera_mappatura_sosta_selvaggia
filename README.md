@@ -35,4 +35,5 @@ Il notebook prende in input:
     - poligoni SCP final.kml (file kml contenente un layer di poligoni che suddividono milano in n aree)
 
 Il notebook restituisce in output:
--il grafo stradale con aggiunta l'informazione del cluster di appartenenza per ogni via (grafo_stradale_OSM_comune_with_groups)
+- il grafo stradale con aggiunta l'informazione del cluster di appartenenza per ogni via (grafo_stradale_OSM_comune_with_groups)
+- un file csv con la suddivisione delle vie nei cluster (df_suddivisione_vie_per_cluster.csv)
