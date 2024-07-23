@@ -51,6 +51,7 @@ MANIFEST
 *.geojson
 *.json
 *.cpg
+!poligoni SCP final.kml
 
 # Unit test / coverage reports
 htmlcov/
