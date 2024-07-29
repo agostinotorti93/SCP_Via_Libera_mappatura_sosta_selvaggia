@@ -12,7 +12,7 @@ A quel punto abbiamo predisposto un algoritmo in Python per interpolare il grafo
 
 Dopodiché ci si occupati della parte di matching fra cluster di vie e gruppi di volontari iscritti al progetto di ViaLibera. Infine è stata sviluppata una Web App per permettere agli utenti iscriti di mappare le diverse zone della città.
 
-In questa repository, sono riportati i codici che permettono di estrarre il grafo stradale di una città e suddividere le vie della città in "cluster". Non sono invece riportati gli step di assegnazione delle vie ai volontari e gli step di sviluppo della Web App. Tutti i codici sono stati scritti per essere replicabili ed applicabili ad altre realtà e comuni.
+In questa repository sono riportati i codici che permettono di estrarre il grafo stradale di una città e suddividere le vie della città in "cluster". Non sono invece riportati gli step di assegnazione delle vie ai volontari e gli step di sviluppo della Web App. Tutti i codici sono stati scritti per essere replicabili ed applicabili ad altre realtà e comuni.
 
 
 ### step_0_vialibera_preprocessing_grafo.ipynb
@@ -31,9 +31,9 @@ Il notebook restituisce in output:
 Notebook che permette - interpolando un grafo stradale e un insieme di n poligoni - di estrarre n cluster, ognuno composto da un insieme di vie.
 
 Il notebook prende in input:
-    - grafo_stradale_OSM_milano_final(grafo stradale di milano)
-    - poligoni SCP final.kml (file kml contenente un layer di poligoni che suddividono milano in n aree)
+    - il grafo stradale di un'area circoscritta prodotto in output dal notebook precedente (grafo_stradale_OSM_comune_filtered)
+    - file kml contenente un layer di poligoni che suddividono il grafo stradale in n aree (poligoni SCP final)
 
 Il notebook restituisce in output:
-- il grafo stradale con aggiunta l'informazione del cluster di appartenenza per ogni via (grafo_stradale_OSM_comune_with_groups)
+- il grafo stradale in formato geojson con aggiunta l'informazione del cluster di appartenenza per ogni via (grafo_stradale_OSM_comune_with_groups)
 - un file csv con la suddivisione delle vie nei cluster (df_suddivisione_vie_per_cluster.csv)
